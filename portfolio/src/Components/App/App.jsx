@@ -1,6 +1,7 @@
 //import { useState } from 'react'
 import { Banner } from '../Banner/Banner'
 import { ExperienceList } from '../ExperienceList/ExperienceList'
+import { ProjectList } from '../ProjectList/ProjectList'
 import './App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div id='app'>
       <Banner></Banner>
       <ExperienceList></ExperienceList>
+      <ProjectList></ProjectList>
     </div>
   )
 }

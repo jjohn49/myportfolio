@@ -1,12 +1,25 @@
-#experience{
-    height: 20vh;
-    padding-left: 3em; 
-}
+
 
 #experience h5{
-    padding-left: 3em;
+    padding-left: 4em;
+    padding-right: 2em;
 }
 
-#experience ul{
+ul{
     list-style-type: none;
+    display: -webkit-inline-box;
+    width: 95%;
+    overflow-x: auto;
+}
+
+#more-coming-button{
+    border: none;
+    background-color: transparent;
+}
+
+#more-coming-li{
+    height: 20em;
+    width: 30em;
+    border-radius: 5%;
+    background-color: aqua;
 }
