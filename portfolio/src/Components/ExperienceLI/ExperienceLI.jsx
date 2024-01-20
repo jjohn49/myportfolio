@@ -4,7 +4,7 @@ export function ExperienceCard({experiece}){
     console.log(experiece)
     return (
         <li id="experience-card">
-            {experiece.image}
+            <button>{experiece.image}</button>
         </li>
     )
 }

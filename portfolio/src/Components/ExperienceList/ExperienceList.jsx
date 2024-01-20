@@ -10,6 +10,7 @@ export function ExperienceList(){
     })
     return(
         <div id='experience'>
+            <h3 className='section-title'>Experience</h3>
             <ul>
                 {lis}
             </ul>

@@ -6,3 +6,8 @@
   height: 100%;
   overflow: scroll;
 }
+
+.section-title{
+  font-size: xx-large;
+  padding-left: 1em;
+}

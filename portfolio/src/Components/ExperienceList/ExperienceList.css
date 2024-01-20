@@ -1,3 +1,12 @@
 #experience{
-    height: 20vh; 
+    height: 20vh;
+    padding-left: 3em; 
+}
+
+#experience h5{
+    padding-left: 3em;
+}
+
+#experience ul{
+    list-style-type: none;
 }
