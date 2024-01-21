@@ -12,7 +12,7 @@ export function ProjectList(){
     return(
         <div className="section-body">
             <h3 className="section-title">Projects</h3>
-            <ol>
+            <ol id="projects">
                 {lis}
             </ol>
         </div>

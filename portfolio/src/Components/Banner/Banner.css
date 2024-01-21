@@ -37,4 +37,7 @@
     display: flex;
     padding-top: 1em;
     padding-right: 1em;
+    margin: 0;
+    justify-content: space-between;
+    width: 15em;
 }
