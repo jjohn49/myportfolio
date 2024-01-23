@@ -2,7 +2,13 @@ import "./Project.css"
 import githubLogo from "../../assets/github_git_hub_logo_icon_132878.png"
 
 export class Project{
-    constructor(name, image, description, githubLink, languages){
+    name: string
+    image: React.JSX.Element
+    description: string
+    githubLink:string
+    languages:string
+    
+    constructor(name: string, image: React.JSX.Element, description:string, githubLink:string, languages:string){
         this.name = name
         this.image = image
         this.description = description

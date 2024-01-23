@@ -1,8 +1,13 @@
 //import { Heart } from "../Heart/Heart"
+import { Project } from '../../Classes/Project/Project'
 import heart from '../../assets/spotify_heart.png'
 import "./ProjectListItem.css"
 
-export function ProjectListItem({project}){
+type Props = {
+    project: Project
+}
+
+export function ProjectListItem({project}: Props){
 
     return(
         <li className='project-li'>

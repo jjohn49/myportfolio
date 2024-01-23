@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import './ExperienceList.css'
 import { experiences } from '../../Classes/Experience/Experience'
-import { ExperienceListItem } from '../ExperienceListItem/ExperienceListItem'
+import { ExperienceListItem } from '../ExperienceListItem/ExperienceListItem';
 
 function tempCallback(){
     console.log("Callbacl worked");
@@ -10,7 +10,7 @@ function tempCallback(){
 export function ExperienceList(){
 
     let lis = experiences.map((exp)=>{
-        return <ExperienceListItem experiece={exp} callback={tempCallback}></ExperienceListItem>
+        return <ExperienceListItem experience={exp} callback={tempCallback}></ExperienceListItem>
     })
     return(
         <div className='section-body'>

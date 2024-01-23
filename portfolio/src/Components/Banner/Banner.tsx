@@ -6,9 +6,9 @@ export function Banner(){
     return (
         <div id='banner-fade'>
             <div id='top-buttons'>
-                <TopButton name={"About"}></TopButton>
+                <TopButton name={"About"} callback={()=>{console.log("hello")}}></TopButton>
                 <br></br>  
-                <TopButton name={"Contact"}></TopButton>              
+                <TopButton name={"Contact"} callback={()=>{console.log("hello")}}></TopButton>              
             </div>
             <div id='banner-elements'>
                 <img src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png' alt='Image'></img>

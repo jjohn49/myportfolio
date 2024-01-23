@@ -4,7 +4,14 @@ import vsds_logo from "../../assets/VSDS_logo.png"
 
 import "./Experience.css"
 export class Experience{
-    constructor(title, company, image, logo, description, skills){
+    title: string
+    company: string
+    image: React.JSX.Element
+    logo: React.JSX.Element
+    description: string
+    skills: [string]
+    
+    constructor(title: string, company: string, image: React.JSX.Element, logo: React.JSX.Element, description: string, skills: [string]){
         this.title = title
         this.company = company
         this.image = image
