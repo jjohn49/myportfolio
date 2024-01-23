@@ -1,4 +1,5 @@
 .experience-card{
+    transition : 1000ms;
     margin-right: 1em;
     height: 20em;
     width: 30em;
@@ -6,6 +7,7 @@
 }
 
 .experience-card-hover{
+    transition : 1000ms;
     width: 35em;
     height: 22em;
     border: none;
