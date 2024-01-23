@@ -9,9 +9,9 @@ export class Experience{
     image: React.JSX.Element
     logo: React.JSX.Element
     description: string
-    skills: [string]
-    
-    constructor(title: string, company: string, image: React.JSX.Element, logo: React.JSX.Element, description: string, skills: [string]){
+    skills: string[]
+
+    constructor(title: string, company: string, image: React.JSX.Element, logo: React.JSX.Element, description: string, skills: string[]){
         this.title = title
         this.company = company
         this.image = image
