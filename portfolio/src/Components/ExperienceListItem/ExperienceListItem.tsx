@@ -1,4 +1,4 @@
-import { MouseEventHandler } from "react"
+import { MouseEventHandler, useState } from "react"
 import { Experience } from "../../Classes/Experience/Experience"
 import "./ExperienceListItem.css"
 
@@ -8,10 +8,20 @@ type Props = {
 }
 
 export function ExperienceListItem({experience, callback}: Props){
-    console.log(experience)
+    
+    const [style, setStyle] = useState('experience-card')
+
+    const onHover = ()=>{
+        setStyle('experience-card experience-card-hover')
+    }
+
+    const onLeave = ()=>{
+        setStyle('experience-card')
+    }
+
     return (
-        <li className="experience-card">
-            <button onClick={callback}>{experience.image}</button>
+        <li className={style}>
+            <button onClick={callback} onMouseOver={onHover} onMouseLeave={onLeave}>{experience.image}</button>
         </li>
     )
 }

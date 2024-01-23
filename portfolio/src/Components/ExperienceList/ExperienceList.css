@@ -5,21 +5,31 @@
     padding-right: 2em;
 }
 
-ul{
+#experience-list{
     list-style-type: none;
     display: -webkit-inline-box;
     width: 95%;
+    height: 25em;
     overflow-x: auto;
 }
 
+.experience-list-item{
+    width: 35em;
+    height: 20em;
+}
+
 #more-coming-button{
+    height: 100%;
+    width: 100%;
     border: none;
     background-color: transparent;
 }
 
 #more-coming-li{
-    height: 20em;
-    width: 30em;
+    margin-right: 1em;
+    width: 100%;
+    height:100%;
     border-radius: 5%;
     background-color: aqua;
 }
+

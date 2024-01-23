@@ -1,4 +1,5 @@
 //import { Heart } from "../Heart/Heart"
+
 import { Project } from '../../Classes/Project/Project'
 import heart from '../../assets/spotify_heart.png'
 import "./ProjectListItem.css"
@@ -8,6 +9,7 @@ type Props = {
 }
 
 export function ProjectListItem({project}: Props){
+
 
     return(
         <li className='project-li'>

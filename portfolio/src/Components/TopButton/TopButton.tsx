@@ -1,4 +1,4 @@
-import { MouseEventHandler } from 'react';
+import { MouseEventHandler, useEffect, useState } from 'react';
 import './TopButton.css'
 
 type Props = {
@@ -7,9 +7,19 @@ type Props = {
 }
 
 export function TopButton({name, callback}: Props){
+    
+    const [style, setStyle] = useState('topbutton')
+    const onHover = ()=>{
+        setStyle('topbutton hover')
+    }
+
+    const onLeave = ()=>{
+        setStyle('topbutton')
+    }
+
     var id = 'topbutton' + name;
     return(
-        <button onClick={callback} className='topbutton' id={id}>
+        <button onClick={callback} className={style} onMouseOver={onHover} onMouseLeave={onLeave}>
             <div>
                 {name}
             </div>

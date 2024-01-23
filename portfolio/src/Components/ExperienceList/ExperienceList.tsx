@@ -15,9 +15,9 @@ export function ExperienceList(){
     return(
         <div className='section-body'>
             <h3 className='section-title'>Experience</h3>
-            <ul>
+            <ul id='experience-list'>
                 {lis}
-                <li>
+                <li className='experience-list-item'>
                     <button id='more-coming-button'>
                         <div id='more-coming-li'></div>
                     </button>
