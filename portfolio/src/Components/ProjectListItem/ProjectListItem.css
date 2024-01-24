@@ -13,7 +13,7 @@
 .project-pic-and-name{
     display: flex;
     align-items: center;
-    width: 30em;   
+    width: 30%;   
 }
 
 .project-li{
@@ -41,7 +41,7 @@
 }
 
 .project-description-div{
-   width: 30em;
+   width: 50%;
    padding-left: 10em;
 }
 
