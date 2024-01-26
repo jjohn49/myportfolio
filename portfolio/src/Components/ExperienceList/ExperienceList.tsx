@@ -3,14 +3,14 @@ import './ExperienceList.css'
 import { experiences } from '../../Classes/Experience/Experience'
 import { ExperienceListItem } from '../ExperienceListItem/ExperienceListItem';
 
-function tempCallback(){
-    console.log("Callbacl worked");
+type Props = {
+    setOverlayObject: Function
 }
 
-export function ExperienceList(){
+export function ExperienceList({setOverlayObject}:Props){
 
     let lis = experiences.map((exp)=>{
-        return <ExperienceListItem experience={exp} callback={tempCallback}></ExperienceListItem>
+        return <ExperienceListItem experience={exp} setOverlayObject={setOverlayObject}></ExperienceListItem>
     })
     return(
         <div className='section-body'>

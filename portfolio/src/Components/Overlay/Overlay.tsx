@@ -3,16 +3,21 @@ import { Project } from '../../Classes/Project/Project'
 import './Overlay.css'
 
 type Props ={
-    isOpen: boolean,
+    object: Project|Experience|null,
     onClose: Function,
-    object: Project|Experience|null
+    
 }
-export function Overlay({isOpen, onClose, object}: Props){
+export function Overlay({object, onClose}: Props){
     return(
         <>
-            {isOpen ? (
-                <div className='overlay'>
-
+            {object != null ? (
+                <div id='overlay'>
+                    
+                    <div id='overlay-content'>
+                        <h1>{object.title}</h1>
+                    </div>
+                    
+    
                 </div> 
             ) : null}
         </>

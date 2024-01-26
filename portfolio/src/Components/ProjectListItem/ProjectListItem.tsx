@@ -5,21 +5,29 @@ import heart from '../../assets/spotify_heart.png'
 import "./ProjectListItem.css"
 
 type Props = {
-    project: Project
+    project: Project,
+    setOverlayObject: Function
 }
 
-export function ProjectListItem({project}: Props){
+export function ProjectListItem({project, setOverlayObject}: Props){
 
+
+    const clickHandler = () =>{
+        setOverlayObject(project)
+    }
 
     return(
         <li className='project-li'>
                 <div className="project-li-container">
                     <div className='project-pic-and-name'>
-                    <a href={project.githubLink}>{project.image}</a>
-                        <div className='project-name-and-languages'>
-                            <h2 className='name-and-languages'>{project.name}</h2>
-                            <h5 className='name-and-languages'>{project.languages}</h5>
-                        </div>
+                        <a href={project.githubLink}>{project.image}</a>
+                        <button onClick={clickHandler}>
+                            <div className='project-name-and-languages'>
+                                <h2 className='name-and-languages'>{project.title}</h2>
+                                <h5 className='name-and-languages'>{project.languages}</h5>
+                            </div>
+                        </button>
+                        
                     </div>
                     
                     <div className='project-description-div'>

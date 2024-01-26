@@ -3,10 +3,14 @@ import "./ProjectList.css"
 import { projects } from "../../Classes/Project/Project"
 import { ProjectListItem } from "../ProjectListItem/ProjectListItem"
 
-export function ProjectList(){
+type Props = {
+    setOverlayObject: Function
+}
+
+export function ProjectList({setOverlayObject}:Props){
 
     var lis = projects.map((proj)=>{
-        return <ProjectListItem project={proj}></ProjectListItem>
+        return <ProjectListItem project={proj} setOverlayObject={setOverlayObject}></ProjectListItem>
     })
 
     return(
