@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import './ExperienceList.css'
-import { experiences } from '../../Classes/Experience/Experience'
+import { experiences } from '../../Classes/Experience'
 import { ExperienceListItem } from '../ExperienceListItem/ExperienceListItem';
 
 type Props = {

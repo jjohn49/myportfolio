@@ -1,5 +1,5 @@
 import { MouseEventHandler, useState } from "react"
-import { Experience } from "../../Classes/Experience/Experience"
+import { Experience } from "../../Classes/Experience"
 import "./ExperienceListItem.css"
 
 type Props = {
@@ -26,7 +26,9 @@ export function ExperienceListItem({experience, setOverlayObject}: Props){
 
     return (
         <li className={style}>
-            <button onClick={clickHandler} onMouseOver={onHover} onMouseLeave={onLeave}>{experience.image}</button>
+            <button onClick={clickHandler} onMouseOver={onHover} onMouseLeave={onLeave}>
+                <img src={experience.image} className="experience-image"></img>
+            </button>
         </li>
     )
 }

@@ -1,6 +1,6 @@
 //import { Heart } from "../Heart/Heart"
 
-import { Project } from '../../Classes/Project/Project'
+import { Project } from '../../Classes/Project'
 import heart from '../../assets/spotify_heart.png'
 import "./ProjectListItem.css"
 
@@ -20,7 +20,9 @@ export function ProjectListItem({project, setOverlayObject}: Props){
         <li className='project-li'>
                 <div className="project-li-container">
                     <div className='project-pic-and-name'>
-                        <a href={project.githubLink}>{project.image}</a>
+                        <a href={project.githubLink}>
+                            <img src={project.image} className='project-image'></img>
+                        </a>
                         <button onClick={clickHandler}>
                             <div className='project-name-and-languages'>
                                 <h2 className='name-and-languages'>{project.title}</h2>

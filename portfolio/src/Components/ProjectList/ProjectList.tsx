@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import "./ProjectList.css"
-import { projects } from "../../Classes/Project/Project"
+import { projects } from "../../Classes/Project"
 import { ProjectListItem } from "../ProjectListItem/ProjectListItem"
 
 type Props = {

@@ -1,5 +1,5 @@
-import { Experience } from '../../Classes/Experience/Experience'
-import { Project } from '../../Classes/Project/Project'
+import { Experience } from '../../Classes/Experience'
+import { Project } from '../../Classes/Project'
 import './Overlay.css'
 
 type Props ={

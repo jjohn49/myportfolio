@@ -5,8 +5,8 @@ import { ExperienceList } from '../ExperienceList/ExperienceList'
 import { Overlay } from '../Overlay/Overlay'
 import { ProjectList } from '../ProjectList/ProjectList'
 import './App.css'
-import { Experience } from '../../Classes/Experience/Experience'
-import { Project } from '../../Classes/Project/Project'
+import { Experience } from '../../Classes/Experience'
+import { Project } from '../../Classes/Project'
 
 function App() {
 
