@@ -16,6 +16,7 @@ function App() {
   const [overlayObject, setOverlayObject] = useState<Experience | Project | null>(null)
 
   const onOverlayClosed = ()=>{
+    setAppStyle('')
     setOverlayObject(null)
   }
 
@@ -27,7 +28,7 @@ function App() {
   
   return (
     <div id='app'>
-        <Overlay onClose={onOverlayClosed} object={overlayObject}></Overlay>
+      <Overlay onClose={onOverlayClosed} object={overlayObject}></Overlay>
       <div id='normal-content' className={appStyle}>
         <Banner></Banner>
         <ExperienceList setOverlayObject={setOverlayObjectCallback}></ExperienceList>
