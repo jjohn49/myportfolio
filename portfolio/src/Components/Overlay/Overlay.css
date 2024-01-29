@@ -32,6 +32,39 @@
 }
 
 #object-image{
+    display: flex;
+    width: 100%;
     height: 50%;
+    
+    align-items: center;
 }
 
+.overlay-object-image{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    opacity: 30%;
+}
+
+#object-logo-title{
+    position: absolute;
+    display: flex;
+    width: 70%;
+    height: 40%;
+    align-items: center;
+    left: 20%;
+}
+
+#object-logo{
+    height: 50%;
+    width: 20%;
+    border-radius: 1em;
+}
+
+#object-title{
+    padding-left: 1em;
+    font-size: 4rem;
+    
+}

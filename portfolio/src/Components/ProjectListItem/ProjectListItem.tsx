@@ -26,7 +26,7 @@ export function ProjectListItem({project, setOverlayObject}: Props){
                         <button onClick={clickHandler}>
                             <div className='project-name-and-languages'>
                                 <h2 className='name-and-languages'>{project.title}</h2>
-                                <h5 className='name-and-languages'>{project.languages}</h5>
+                                <h5 className='name-and-languages'>{project.skills + ""}</h5>
                             </div>
                         </button>
                         
@@ -34,7 +34,7 @@ export function ProjectListItem({project, setOverlayObject}: Props){
                     
                     <div className='project-description-div'>
                         <br></br>
-                        <h4 className='project-description'>{project.description}</h4>
+                        <h4 className='project-description'>{project.blurb}</h4>
                     </div>
 
                     <div className='project-image-div'>
