@@ -1,5 +1,5 @@
 .project-li-container{
-    width: 100%;
+    width: 90vw;
     display: -webkit-inline-box;
     vertical-align: middle;
 }
@@ -13,7 +13,7 @@
 .project-pic-and-name{
     display: flex;
     align-items: center;
-    width: 30%;   
+    width: 27vw;   
 }
 
 .project-li{
@@ -33,6 +33,7 @@
 
 .project-name-and-languages{
     /*margin-top: 5%;*/
+    
 }
 
 .name-and-languages{
@@ -41,12 +42,19 @@
 }
 
 .project-description-div{
-   width: 50%;
-   padding-left: 10em;
+   width: 40vw;
+   display: flex;
+   padding-left: 10%;
+   align-items: center;
+   overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .project-image-div{
-    padding-left: 10em;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 5vw;
 }
 
 .project-image{

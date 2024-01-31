@@ -4,11 +4,12 @@
 }
 
 #banner-elements{
-    padding-top: 5em;
+    padding-top: 2em;
     padding-left: 5em;
     top: 10;
     display: flex;
     height: 100%;
+    align-items: center;
 }
 
 #banner-elements img{
@@ -40,4 +41,30 @@
     margin: 0;
     justify-content: space-between;
     width: 15em;
+}
+
+#description{
+    padding-top: 2rem;
+    height: auto;
+    line-height: 1.5;
+    width: 70vw;
+}
+
+#description h4{   
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (max-width : 1637px)  {
+
+    #banner-name{
+        font-size: 6ch;
+    }
+    #description{
+        width: 50vw;
+        padding-top: 1rem;
+    }
+    #description h4{
+        white-space: nowrap;
+    }
 }

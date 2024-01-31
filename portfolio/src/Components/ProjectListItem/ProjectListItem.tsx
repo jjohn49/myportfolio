@@ -16,6 +16,14 @@ export function ProjectListItem({project, setOverlayObject}: Props){
         setOverlayObject(project)
     }
 
+    const getLanguages = ()=> {
+        var ret = ""
+        project.skills.forEach((skill)=>{
+            ret += skill + " "
+        })
+        return ret
+    }
+
     return(
         <li className='project-li'>
                 <div className="project-li-container">
@@ -26,7 +34,7 @@ export function ProjectListItem({project, setOverlayObject}: Props){
                         <button onClick={clickHandler}>
                             <div className='project-name-and-languages'>
                                 <h2 className='name-and-languages'>{project.title}</h2>
-                                <h5 className='name-and-languages'>{project.skills + ""}</h5>
+                                <h5 className='name-and-languages'>{getLanguages()}</h5>
                             </div>
                         </button>
                         

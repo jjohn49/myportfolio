@@ -43,6 +43,7 @@
     position: relative;
     height: 100%;
     width: 100%;
+    min-width: 300px;
     border-top-right-radius: 1em;
     border-top-left-radius: 1em;
     opacity: 30%;
@@ -68,3 +69,4 @@
     font-size: 4rem;
     
 }
+
