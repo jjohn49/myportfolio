@@ -32,8 +32,13 @@
 }
 
 .project-name-and-languages{
-    /*margin-top: 5%;*/
-    
+    border: none;
+    background-color: transparent;
+}
+
+.project-name-and-languages:hover{
+    color: blueviolet;
+    min-width: 5em;
 }
 
 .name-and-languages{
@@ -60,5 +65,19 @@
 .project-image{
     height: 7em;
     width: 7em;
+}
+
+@media only screen and (max-width: 800px) {
+    .project-pic-and-name{
+        width: 80%;
+    }
+
+    .project-description-div{
+        display: none;
+    }
+
+    .project-image-div{
+        display: none;
+    }
 }
 

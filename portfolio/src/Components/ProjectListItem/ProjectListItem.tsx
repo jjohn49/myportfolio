@@ -31,11 +31,11 @@ export function ProjectListItem({project, setOverlayObject}: Props){
                         <a href={project.githubLink}>
                             <img src={project.image} className='project-image'></img>
                         </a>
-                        <button onClick={clickHandler}>
-                            <div className='project-name-and-languages'>
+                        <button className='project-name-and-languages' onClick={clickHandler}>
+                            
                                 <h2 className='name-and-languages'>{project.title}</h2>
                                 <h5 className='name-and-languages'>{getLanguages()}</h5>
-                            </div>
+                            
                         </button>
                         
                     </div>

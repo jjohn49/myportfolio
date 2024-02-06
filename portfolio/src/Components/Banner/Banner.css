@@ -10,6 +10,7 @@
     display: flex;
     height: 100%;
     align-items: center;
+    margin-bottom: 2em;
 }
 
 #banner-elements img{
@@ -34,13 +35,13 @@
 }
 
 #top-buttons{
-    float: right;
+    left: none;
+    width: 100vw;
     display: flex;
     padding-top: 1em;
-    padding-right: 1em;
     margin: 0;
-    justify-content: space-between;
-    width: 15em;
+    justify-content: right;
+    
 }
 
 #description{
@@ -67,4 +68,19 @@
     #description h4{
         white-space: nowrap;
     }
+}
+
+@media only screen and (max-width: 910px){
+    
+    #banner-elements{
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    #banner-fade{
+        height: 90vh;
+    }
+    
 }

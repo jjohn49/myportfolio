@@ -6,7 +6,7 @@ export class ParentObject{
     description:string
     skills: string[]
     
-    constructor(title:string, image:string, logo:string, blurb: string, description:string, skills:string[]){
+    constructor(title:string = "", image:string ="", logo:string="", blurb: string="", description:string = "", skills:string[] = []){
         this.title = title
         this.image = image
         this.logo = logo

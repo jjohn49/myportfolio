@@ -1,15 +1,20 @@
 .experience-card{
     transition : 1000ms;
     margin-right: 1em;
-    height: 20em;
-    width: 30em;
-    
+    height: 45vh;
+    width: 35vw;
+    min-height: 13em;
+    min-width: 20em;
+    max-height: 20em;
+    max-width: 30em;
 }
 
 .experience-card-hover{
     transition : 1000ms;
-    width: 35em;
-    height: 22em;
+    width: 35vw;
+    height: 50vh;
+    max-height: 22em;
+    max-width: 35em;
     border: none;
     background-color: transparent;
     

@@ -19,7 +19,11 @@ export function ExperienceList({setOverlayObject}:Props){
                 {lis}
                 <li className='experience-list-item'>
                     <button id='more-coming-button'>
-                        <div id='more-coming-li'></div>
+                        <div id='more-coming-li'>
+                            <h1>
+                                More coming soon
+                            </h1>
+                        </div>
                     </button>
                 </li>
             </ul>
