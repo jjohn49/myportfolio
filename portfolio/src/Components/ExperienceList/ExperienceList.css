@@ -14,8 +14,12 @@
 }
 
 .experience-list-item{
-    width: 35em;
-    height: 20em;
+    width: 30vw;
+    height: 45vh;
+    min-height: 13em;
+    min-width: 20em;
+    max-height: 20em;
+    max-width: 30em;
 }
 
 #more-coming-button{
